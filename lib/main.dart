@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:imu_survey_new/feature/login_registration/presentation/provider/survey_list_provider.dart';
 import 'package:imu_survey_new/feature/survey/presentation/pages/sample_survey.dart';
 import 'package:provider/provider.dart';
 
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (_) => AuthProvider()),
         ChangeNotifierProvider(create: (_) => UserProvider()),
+        ChangeNotifierProvider(create: (_) => SurveyListProvider()),
       ],
       child: MaterialApp(
           debugShowCheckedModeBanner: false,
